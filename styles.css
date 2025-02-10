@@ -1,0 +1,569 @@
+ /* Fixed Navbar */
+ 
+.navbar-custom {
+    background-color: #2E1A64;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Logo & Title */
+.navbar-brand img {
+    height: 50px;
+    margin-right: 10px;
+}
+.navbar-title {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Search Box */
+.search-container {
+    flex-grow: 1;
+}
+.search-box {
+    background-color: #4C3274;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    width: 100%;
+}
+.search-box::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+/* Sign-in Button */
+.btn-signin {
+    background-color: #FFC107;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 8px 15px;
+}
+.btn-signin:hover {
+    background-color: #e0a800;
+}
+
+
+
+
+
+/* Full Width Image */
+.banner-image {
+    margin-top: 100px; /* Offset for fixed navbar */
+    width: 100%;
+    height: auto;
+}
+
+/* Two-column Layout */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+    position: relative;
+}
+
+
+.left-section {
+    width: 72%;
+    overflow: visible;
+}
+
+
+/* Right Section */
+.right-section {
+    width: 35%;
+    
+   
+    padding: 20px 0px;
+    background: #f8f9fa;
+    border-radius: 10px;
+
+
+  
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* When both sections start scrolling together */
+
+
+
+/* Profile Section */
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 100px;
+}
+
+.profile h4 {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #2c1a6c;
+}
+
+.profile p {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+
+
+/* Register Button */
+.register-btn {
+    width: 100%;
+  
+    background: red;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* App Download Section */
+.download-app {
+    text-align: center;
+    background: #e7d8ff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.download-app h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2c1a6c;
+}
+.app-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.app-icons img {
+    width: 90px;
+    height: auto;
+    cursor: pointer;
+}
+.g-pa{
+    position: absolute;
+    bottom: 65%;
+    left: 20%;
+    width: 25%;
+    height: auto;
+    cursor: pointer;
+}
+.a-store{
+    position: absolute;
+    bottom: 65%;
+    right: 26%;
+    width: 25%;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Footer */
+
+
+ /* Centering timeline section */
+ .event-timeline {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.event-item {
+    display: inline-block;
+    width: 180px;
+    margin: 20px;
+    text-align: center;
+}
+
+.event-item img {
+    width: 60px;
+    height: 60px;
+}
+
+.event-item p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.event-date {
+    background: #eee;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.side-section {
+    position: sticky;
+    top: 20px;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.donation-progress {
+    background: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.progress-bar {
+    background: #6a1b9a;
+    height: 10px;
+    width: 0%;
+    border-radius: 5px;
+}
+
+.donate-btn {
+    display: block;
+    background: green;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.timeline-section {
+text-align: center;
+padding: 10px 20px;
+}
+.timeline-header {
+font-size: 24px;
+font-weight: bold;
+color: #3c1361;
+}
+.timeline {
+display: flex;
+justify-content: space-between;
+position: relative;
+margin: 50px auto;
+max-width: 800px;
+flex-wrap: wrap;
+}
+.timeline::before {
+content: "";
+position: absolute;
+width: 100%;
+height: 6px;
+background: #ccc;
+top: 100%;
+transform: translateY(-50%);
+z-index: 0;
+}
+.timeline-item {
+text-align: center;
+position: relative;
+z-index: 1;
+width: 25%;
+padding: 20px 10px;
+}
+.timeline-item img {
+width: 50px;
+height: 50px;
+display: block;
+margin: 0 auto 10px;
+}
+.timeline-item span {
+display: block;
+font-size: 14px;
+}
+.progress-ball {
+width: 30px;
+height: 30px;
+background: #6f42c1;
+border-radius: 50%;
+position: absolute;
+top: 99%;
+transform: translateY(-50%);
+animation: moveProgress 5s linear infinite alternate;
+}
+@keyframes moveProgress {
+0% { left: 0%; }
+100% { left: 20%; }
+}
+.price-section{
+    background-color: #ffeddd;
+}
+
+.text-price{
+    color: rgb(44, 25, 99);;
+}
+.price-won{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+/* Background Gradient for the Badge Section */
+.badge-container {
+    background: linear-gradient(to bottom, #9b89f9, #6755d5);
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    padding-top: 50px; /* Space for button */
+}
+
+/* General Image Styling - Same Size for All */
+.Earned img {
+    width: 130%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain; /* Ensures the image scales properly without distortion */
+    padding: 10px;
+}
+
+/* Adjust Column Layout */
+.adjust-col {
+    width: 276px;
+    height: auto;
+    flex-grow: 0;
+    display: flex;
+    justify-content: center;
+   
+    align-items: center;
+}
+
+/* Button Positioned at the Top Border Middle */
+.badge-wrapper {
+    position: relative;
+}
+
+.badge-button {
+    position: absolute;
+    top: -20px; /* To align exactly on border */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Your Provided Image (Bigger) */
+.special-badge {
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    object-fit: contain;
+    margin-top: 20px;
+}
+
+footer {
+    background: #2c1a6c;
+    color: white;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+   
+}
+
+/* Footer Container */
+footer .container {
+    max-width: 1140px; /* Keeps content centered */
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* Responsive Columns */
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Each Section */
+footer .col-md-4 {
+    flex: 1;
+    min-width: 250px; /* Prevents stacking too soon */
+    padding: 10px;
+}
+
+/* Fixing Alignment of List Items */
+footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li {
+    margin: 5px 0;
+}
+
+/* Social Icons */
+footer .social-icons a {
+    display: inline-block;
+    margin: 5px;
+}
+
+footer .social-icons img {
+    width: 30px;
+    transition: transform 0.2s ease-in-out;
+}
+
+footer .social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Fixes */
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 992px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-section{
+        width: 80%
+    }
+    .price-won{
+        flex-direction: column;
+    }
+    .text-price{
+        text-align: center;
+    }
+    footer {
+      
+        font-size: 12px;
+       
+       
+    }
+    
+    
+}
+
+@media (max-width: 768px) {
+
+    /* Arrange logo & title side by side */
+    .logo-title {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .navbar-title {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    /* Search & Button Side by Side */
+    .search-button-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search-container {
+        flex-grow: 1;
+        margin-right: 10px;
+    }
+
+    .btn-signin {
+        white-space: nowrap;
+        padding: 10px 15px;
+    }
+    footer .row {
+        flex-direction: column;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    footer .col-md-4 {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .d-flex {
+        justify-content: center;
+    }
+
+    .timeline {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .timeline::before {
+        width: 6px;
+        height: 100%;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+    }
+    .timeline-item {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+        position: relative;
+        padding: 20px 0;
+    }
+    .timeline-item img {
+        position: relative;
+        display: block;
+        margin: 0 auto 10px;
+    }
+    .progress-ball {
+        display: none;
+    }
+    .event-timeline {
+        flex-direction: column;
+    }
+    .event-item {
+        width: 100%;
+        text-align: center;
+    }
+    .download-app img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .app-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .app-icons img {
+        width: 100px;
+    }
+    .g-pa {
+       
+        left: 32%;
+    }
+    .a-store {
+     
+        right: 32%;}
+        .banner-image {
+            margin-top: 144px;
+        }
+}
